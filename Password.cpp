@@ -3,14 +3,14 @@
 #include <iostream>
 #include "UsefulFunctions.h"
 
-Password::Password()
+Password::Password() // Default constructor 
 {
 	puts("New password created: <without initialisation> [length = 0]");
 }
 
-Password::Password(const char* password)
+Password::Password(const char* password) // Transformation contructor
 {
-	this->password = str_create_copy(password, &length);
+	this->password = str_create_copy(password, &length); 
 
 	printf("New password created: %s [length = %u]\n", this->password, length);
 }

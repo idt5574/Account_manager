@@ -6,13 +6,13 @@ class Password
 
 public:
 
-	Password();
-	Password(const char*);
+	Password(); // Default constructor
+	Password(const char*); // Transformation constructor, receiving a string with a password
 
-	void set_password(const char*);
+	void set_password(const char*); // Password setter, receiving a string with a password
 
-	const char* get_password() const;
-	size_t get_length() const;
+	const char* get_password() const; // Password getter
+	size_t get_length() const; // Length getter
 
 };
 
